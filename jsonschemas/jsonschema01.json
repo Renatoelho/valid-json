@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "JsonShema01",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "nome": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": ["active", "inactive", "pending"]
+        },
+        "idade": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "email": {
+            "type": "string",
+            "format": "email"
+        }
+    },
+    "required": ["id", "nome", "status", "idade", "email"]
+}
